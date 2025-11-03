@@ -1,0 +1,184 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+   
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-header {
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar-dark {
+    background-color: #000 !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand .site-title {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(13, 197, 218) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(40, 61, 247) !important;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #000 !important;
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+
+.content {
+    flex: 1;
+    padding: 100px 0 50px; 
+}
+
+
+.projects-section {
+    background-color: rgba(65, 83, 134, 0.5);
+    padding: 60px 0;
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.projects-section p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+
+.project-card {
+      background-color: rgba(69, 108, 226, 0.3);
+    border-radius: 20px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(114, 0, 221, 0.4);
+}
+
+.project-card i {
+    font-size: 45px;
+    color: #a45ee5;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.project-card b {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.project-card p {
+    font-size: 0.95rem;
+    color: #77e1fb;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #a45ee5;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #051bdd;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 30%, #0a0f1f, #050914);
+  z-index: -1;
+}
